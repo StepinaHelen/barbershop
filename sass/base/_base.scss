@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+* ::after {
+  box-sizing: inherit;
+}
+body {
+  color: #555555;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.86;
+}
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.link {
+  text-decoration: none;
+  display: block;
+}

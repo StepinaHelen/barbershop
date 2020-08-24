@@ -1,0 +1,18 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-color: aquamarine;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-color: rgb(106, 20, 187);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-color: rgb(187, 20, 137);
+  }
+}
