@@ -1,7 +1,7 @@
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
-  // background-color: rgb(255, 196, 242);
+  background-color: rgb(255, 196, 242);
   position: relative;
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -9,12 +9,6 @@
   }
 }
 
-// .header-navigation-address {
-//   display: flex;
-//   background-color: rgb(255, 196, 242);
-//   justify-content: space-between;
-//   align-items: center;
-// }
 .header-logo-address {
   display: flex;
   justify-content: space-between;
@@ -24,31 +18,21 @@
     align-items: flex-start;
   }
 }
-// .main-nav {
-//   display: block;
-// }
-// .navigation-mobile-menu {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: rgb(255, 196, 242);
-//   position: relative;
-// }
-// .header-navigation .container {
-//   position: relative;
-// }
-// .logo {
-//   @media screen and (min-width: 768px) {
-//     padding-top: 0px;
-//     margin-top: 0px;
-//   }
-// }
+.logo {
+  @media screen and (max-width: 767px) {
+    fill: #ffffff;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 64px;
+  }
+}
 .button-navigation {
   position: relative;
   z-index: 10;
   background-color: transparent;
   border: none;
   margin: 0px;
+  fill: #ffffff;
   //   padding-top: 48px;
   .icon-cross {
     display: none;
@@ -91,6 +75,9 @@
     padding-top: 20px;
     margin-right: 47px;
   }
+  @media screen and (min-width: 1280px) {
+    margin-right: 322px;
+  }
 }
 .navigation-list-item-link {
   font-weight: 600;
@@ -116,6 +103,9 @@
       margin-right: 24px;
       margin-bottom: 0px;
     }
+    @media screen and (min-width: 1280px) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -131,6 +121,9 @@
   @media screen and (min-width: 768px) {
     margin-top: 8px;
     margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
   }
 }
 .header-lists-items:not(:last-child) {
@@ -160,6 +153,18 @@
     color: #ffffff;
   }
 }
+// .button-header {
+//   margin-bottom: 64px;
+//   margin-top: 24px;
+//   @media screen and (min-width: 768px) {
+//     margin-top: 8px;
+//     margin-bottom: 0px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     margin-left: 40px;
+//   }
+//
+
 .button-header {
   border: 1px solid #ff6c00;
   box-sizing: border-box;
@@ -171,6 +176,8 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  margin-bottom: 64px;
+  margin-top: 24px;
   color: #303030;
   &:hover,
   &:focus {
@@ -178,6 +185,12 @@
   }
   @media screen and (min-width: 768px) {
     color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
   }
 }
 .header-lists-items-link {
@@ -209,7 +222,7 @@
     align-items: center;
   }
   @media screen and (min-width: 1280px) {
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 }
