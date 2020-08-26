@@ -96,10 +96,7 @@
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-description-1::before {
-  content: ' ';
-  display: block;
-  width: 60px;
-  height: 1px;
+  @extend %line-before-title;
   background: rgba(157, 164, 189, 0.6);
   margin-right: 20px;
 }

@@ -176,24 +176,6 @@
     margin-top: 24px;
     padding: 12px 37px;
   }
-  // border: 1px solid #ff6c00;
-  // box-sizing: border-box;
-  // border-radius: 25px;
-  // padding: 12px 37px;
-  // font-weight: 600;
-  // font-size: 12px;
-  // line-height: 1.33;
-  // letter-spacing: 0.09em;
-  // text-transform: uppercase;
-  // background-color: transparent;
-  // margin-bottom: 64px;
-  // margin-top: 24px;
-  // color: #303030;
-  // transition: background-color 250ms linear;
-  // &:hover,
-  // &:focus {
-  //   background-color: #ff6c00;
-  // }
   @media screen and (min-width: 768px) {
     color: #ffffff;
     padding: 12px 20px;
@@ -220,10 +202,7 @@
   align-items: center;
   justify-content: space-between;
   &::before {
-    content: ' ';
-    width: 60px;
-    height: 1px;
-    display: block;
+    @extend %line-before-title;
     background: #303030;
   }
 }

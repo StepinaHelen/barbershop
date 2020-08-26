@@ -1,0 +1,8 @@
+// линия перед заголовками  @extend %line-before-title;
+%line-before-title {
+  content: ' ';
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
