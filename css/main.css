@@ -461,6 +461,14 @@ img {
   margin-right: 20px;
 }
 
+.hero-description-1, .about-us-description-1 {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -871,11 +879,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 
@@ -1017,11 +1020,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #303030;
 }
 
@@ -1052,5 +1050,9 @@ img {
     font-size: 42px;
     line-height: 1.16;
   }
+}
+
+.servises {
+  border: 2px solid #3f0427;
 }
 /*# sourceMappingURL=main.css.map */

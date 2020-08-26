@@ -6,3 +6,11 @@
   height: 1px;
   margin-right: 20px;
 }
+//  заголовок после линии  @extend %text-after-line;
+%text-after-line {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
