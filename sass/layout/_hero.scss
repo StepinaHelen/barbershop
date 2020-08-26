@@ -84,9 +84,6 @@
   }
 }
 .hero-description-1 {
-  display: flex;
-  align-items: center;
-  //   justify-content: space-between;
   @extend %text-after-line;
   color: rgba(157, 164, 189, 0.6);
 }
