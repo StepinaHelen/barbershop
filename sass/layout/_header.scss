@@ -1,8 +1,16 @@
 .header {
+  // background-color: rgb(187, 20, 137);
+  position: absolute;
+  width: 100%;
+  // left: 50%;
+  // transform: translateX(-50%);
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: rgb(255, 196, 242);
-  position: relative;
+  // position: relative;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    // background-color: rgb(63, 4, 39);
+  }
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -13,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
+  // background-color: bisque;
   @media screen and (min-width: 768px) {
     align-items: flex-start;
   }
@@ -34,6 +42,7 @@
   margin: 0px;
   fill: #ffffff;
   //   padding-top: 48px;
+
   .icon-cross {
     display: none;
   }
@@ -43,6 +52,7 @@
 }
 .button-navigation.is-open .icon-cross {
   display: block;
+  fill: black;
 }
 .button-navigation.is-open .icon-menu {
   display: none;
@@ -85,6 +95,7 @@
   line-height: 1.38;
   color: #303030;
   letter-spacing: 0.1em;
+  transition: color 250ms linear;
   &:hover,
   &:focus {
     color: #ff6c00;
@@ -143,6 +154,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-style: normal;
+  transition: color 250ms linear;
   &:hover,
   &:focus {
     color: #ff6c00;
@@ -179,6 +191,7 @@
   margin-bottom: 64px;
   margin-top: 24px;
   color: #303030;
+  transition: background-color 250ms linear;
   &:hover,
   &:focus {
     background-color: #ff6c00;
@@ -198,6 +211,7 @@
   line-height: 1.35;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms linear;
   &:hover,
   &:focus {
     color: #ff6c00;

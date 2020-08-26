@@ -39,24 +39,29 @@
   }
 }
 .hero-section {
+  //   flex-grow: 1;
   padding-top: 208px;
   padding-bottom: 183px;
   padding-left: 31px;
-  padding-right: 112px;
+  padding-right: 113px;
   //   background-color: rgb(63, 4, 39);
   @media screen and (min-width: 768px) {
-    padding-top: 272px;
+    padding-top: 274px;
     padding-bottom: 245px;
     padding-right: 95px;
     padding-left: 240px;
     // background-color: rgb(39, 243, 165);
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 206px;
+    padding-top: 274px;
+    padding-bottom: 209px;
     padding-left: 200px;
     padding-right: 470px;
     // background-color: rgb(187, 20, 137);
   }
+}
+.hero .container {
+  display: flex;
 }
 .hero-title {
   margin-top: 20px;
@@ -66,8 +71,17 @@
   font-size: 48px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-
   color: #ffffff;
+  @media screen and (max-width: 479px) {
+    font-size: 35px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 72px;
+    line-height: 1.18;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }
 .hero-description-1 {
   display: flex;
@@ -94,14 +108,30 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+.hero-side {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  align-items: center;
+  position: relative;
 }
 .hero-aside-list {
   @media screen and (max-width: 479px) {
     display: none;
   }
   @media screen and (min-width: 480px) {
+    position: absolute;
+    bottom: 40px;
+    left: 34px;
     display: flex;
     align-items: center;
+    transform: rotate(-90deg);
+    transform-origin: left;
   }
 }
 .hero-aside-list::before {
@@ -113,4 +143,16 @@
 }
 .hero-aside-items {
   margin-left: 40px;
+}
+.hero-aside-items-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1ю36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -407,10 +408,16 @@ p {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #ffc4f2;
-  position: relative;
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -430,7 +437,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: bisque;
 }
 
 @media screen and (min-width: 768px) {
@@ -474,6 +480,7 @@ p {
 
 .button-navigation.is-open .icon-cross {
   display: block;
+  fill: black;
 }
 
 .button-navigation.is-open .icon-menu {
@@ -527,6 +534,8 @@ p {
   line-height: 1.38;
   color: #303030;
   letter-spacing: 0.1em;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .navigation-list-item-link:hover, .navigation-list-item-link:focus {
@@ -612,6 +621,8 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-style: normal;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .address-header-link:hover, .address-header-link:focus {
@@ -641,6 +652,8 @@ p {
   margin-bottom: 64px;
   margin-top: 24px;
   color: #303030;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .button-header:hover, .button-header:focus {
@@ -667,6 +680,8 @@ p {
   line-height: 1.35;
   letter-spacing: 0.2em;
   color: #303030;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header-lists-items-link:hover, .header-lists-items-link:focus {
@@ -758,12 +773,12 @@ p {
   padding-top: 208px;
   padding-bottom: 183px;
   padding-left: 31px;
-  padding-right: 112px;
+  padding-right: 113px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 272px;
+    padding-top: 274px;
     padding-bottom: 245px;
     padding-right: 95px;
     padding-left: 240px;
@@ -772,10 +787,17 @@ p {
 
 @media screen and (min-width: 1280px) {
   .hero-section {
-    padding-bottom: 206px;
+    padding-top: 274px;
+    padding-bottom: 209px;
     padding-left: 200px;
     padding-right: 470px;
   }
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero-title {
@@ -787,6 +809,22 @@ p {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-title {
+    font-size: 35px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }
 
 .hero-description-1 {
@@ -820,6 +858,26 @@ p {
   color: #9da4bd;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero-description-2 {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+
+.hero-side {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-side {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .hero-aside-list {
     display: none;
@@ -828,12 +886,19 @@ p {
 
 @media screen and (min-width: 480px) {
   .hero-aside-list {
+    position: absolute;
+    bottom: 40px;
+    left: 34px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
   }
 }
 
@@ -847,5 +912,19 @@ p {
 
 .hero-aside-items {
   margin-left: 40px;
+}
+
+.hero-aside-items-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1ю36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.hero-aside-items-link:hover, .hero-aside-items-link:focus {
+  color: #ff6c00;
 }
 /*# sourceMappingURL=main.css.map */
