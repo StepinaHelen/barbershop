@@ -7,7 +7,8 @@
         "../sass/base/_base.scss",
         "../sass/components/_container.scss",
         "../sass/layout/_header.scss",
-        "../sass/layout/_hero.scss"
+        "../sass/layout/_hero.scss",
+        "../sass/layout/_about-us.scss"
     ],
     "names": [],
     "file": "main.min.css"
