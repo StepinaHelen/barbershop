@@ -1197,11 +1197,6 @@ img {
   color: #ffffff;
 }
 
-.why-we .container {
-  border: 2px solid red;
-  border: 2px solid red;
-}
-
 @media screen and (min-width: 1280px) {
   .why-we .container {
     display: -webkit-box;

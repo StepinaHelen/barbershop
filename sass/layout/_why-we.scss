@@ -1,10 +1,8 @@
 .why-we .container {
-  border: 2px solid red;
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row-reverse;
   }
-  border: 2px solid red;
 }
 .why-we-title {
   @extend %text-title-fs42-lh49;
