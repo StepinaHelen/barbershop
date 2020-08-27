@@ -1,0 +1,51 @@
+.why-we .container {
+  border: 2px solid red;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  border: 2px solid red;
+}
+.why-we-title {
+  @extend %text-title-fs42-lh49;
+  color: #303030;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.why-we-subtitle {
+  @extend %text-after-line;
+  color: #303030;
+  margin-bottom: 20px;
+  &::before {
+    @extend %line-before-title;
+    background-color: #303030;
+  }
+}
+.why-we-description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.why-we-item {
+  display: block;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+}
+.why-we-section-2 {
+  display: flex;
+}
+.why-we-item-number {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.35;
+  // text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.symbol {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: #ff6c00;
+}

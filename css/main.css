@@ -453,7 +453,7 @@ img {
   background-color: #ff6c00;
 }
 
-.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before {
+.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before, .why-we-subtitle::before {
   content: ' ';
   display: block;
   width: 60px;
@@ -461,7 +461,7 @@ img {
   margin-right: 20px;
 }
 
-.hero-description-1, .about-us-description-1, .servises-description {
+.hero-description-1, .about-us-description-1, .servises-description, .why-we-subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,7 +475,7 @@ img {
   text-transform: uppercase;
 }
 
-.servises-title {
+.servises-title, .why-we-title {
   font-family: Raleway;
   font-weight: bold;
   font-size: 42px;
@@ -1195,5 +1195,70 @@ img {
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+}
+
+.why-we .container {
+  border: 2px solid red;
+  border: 2px solid red;
+}
+
+@media screen and (min-width: 1280px) {
+  .why-we .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.why-we-title {
+  color: #303030;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.why-we-subtitle {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.why-we-subtitle::before {
+  background-color: #303030;
+}
+
+.why-we-description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.why-we-item {
+  display: block;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.why-we-section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why-we-item-number {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.symbol {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: #ff6c00;
 }
 /*# sourceMappingURL=main.css.map */
