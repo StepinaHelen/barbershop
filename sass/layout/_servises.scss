@@ -33,12 +33,15 @@
   margin-bottom: 44px;
 }
 .servises-price {
-  padding: 30px 30px;
+  padding: 10px 5px;
   background-image: linear-gradient(
     180deg,
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+  @media screen and (min-width: 480px) {
+    padding: 30px 30px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 30px 40px;
   }
