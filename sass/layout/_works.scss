@@ -1,0 +1,22 @@
+.works-subtitle {
+  @extend %text-after-line;
+  color: #303030;
+  margin-bottom: 44px;
+  &::before {
+    @extend %line-before-title;
+    background: #303030;
+  }
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.works-items {
+  margin: 15px;
+}
+.foto-works {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+}

@@ -459,7 +459,7 @@ img {
   background-color: #ff6c00;
 }
 
-.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before, .why-we-subtitle::before {
+.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before, .why-we-subtitle::before, .works-subtitle::before {
   content: ' ';
   display: block;
   width: 60px;
@@ -467,7 +467,7 @@ img {
   margin-right: 20px;
 }
 
-.hero-description-1, .about-us-description-1, .servises-description, .why-we-subtitle {
+.hero-description-1, .about-us-description-1, .servises-description, .why-we-subtitle, .works-subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1478,5 +1478,33 @@ img {
   text-align: center;
   color: #ff6c00;
   margin-bottom: 30px;
+}
+
+.works-subtitle {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.works-subtitle::before {
+  background: #303030;
+}
+
+.works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.works-items {
+  margin: 15px;
+}
+
+@media screen and (max-width: 479px) {
+  .foto-works {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
