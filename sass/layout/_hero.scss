@@ -39,11 +39,17 @@
   }
 }
 .hero-section {
-  //   flex-grow: 1;
-  padding-top: 208px;
-  padding-bottom: 183px;
-  padding-left: 31px;
-  padding-right: 113px;
+  @media screen and (max-width: 479px) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-top: 208px;
+    padding-bottom: 183px;
+    padding-left: 31px;
+    padding-right: 113px;
+  }
+
   //   background-color: rgb(63, 4, 39);
   @media screen and (min-width: 768px) {
     padding-top: 274px;
