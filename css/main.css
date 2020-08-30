@@ -1253,7 +1253,7 @@ img {
 .why-we-item {
   background-color: #f7f7f7;
   max-width: 125px;
-  height: 90px;
+  height: 110px;
 }
 
 .why-we-item:not(:last-child) {
@@ -1286,6 +1286,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 479px) {
+  .why-we-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
