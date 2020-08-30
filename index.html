@@ -378,39 +378,58 @@
         </div>
       </section>
       <!-- Секция контакты -->
-      <section class="section">
-        <div>
-          <h2>Контакты</h2>
-          <ul class="">
-            <li>
-              <address>
-                <a
+    
+       
+          <div class="contacts ">
+          <section class="contacts-section-1 section">
+           </section>
+           <section  class="contacts-section-2 section" >
+            <div class="contact-title-address">
+           <h2 class="contacts-title">Контакты</h2>
+           <address class="contacts-address">
+           <ul class="contacts-list list">
+            <li class="contacts-item">
+    
+                <a class="link"
                   href="https://goo.gl/maps/RkPo6BVMDpcJUF2z9"
                   aria-label="адрес"
                   target="_blank"
-                  >ул. Васильковая, 7А Киев, 08132</a
+                  
+                  ><svg class="contacts-item-svg">
+                    <use href="./images/sprite.svg#map-pin"></use>
+                  </svg>  ул. Васильковая, 7А <span class="address-item"> Киев, 08132</span></a
                 >
-              </address>
+              
             </li>
-            <li>
-              <address>
-                <a href="tel:+380441111111" aria-label="телефон"
-                  >+38 044 111 11 11</a
+            <li class="contacts-item">
+              <svg class="contacts-item-svg">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+                <a class="link" href="tel:+380441111111" aria-label="телефон"
+                  > +38 044 111 11 11 </a
                 >
-              </address>
+              
             </li>
-            <li>
-              <address>
-                <a href="mailto:barbershop@email.com" aria-label="почта">
-                  barbershop@email.com</a
+           <li class="contacts-item">
+            <svg class="contacts-item-svg">
+              <use href="./images/sprite.svg#mail"></use>
+            </svg>
+                <a  href="mailto:barbershop@email.com" aria-label="почта">
+                  barbershop@email.com </a
                 >
-              </address>
             </li>
-          </ul>
-          <p>время работы</p>
-          <p>Ежедневно с 9:00 до 22:00</p>
+           </ul>
+           </address>
+          </div>
+           <div class="time-day">
+           <p class="contacts-time">время работы</p>
+           <p class="contacts-time-day">Ежедневно с 9:00 до 22:00</p>
+           </div>
+
+         </section>
         </div>
-      </section>
+       
+      
     </main>
     <footer>
       <p>&#169;Copyright 2020</p>

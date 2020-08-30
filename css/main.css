@@ -459,7 +459,7 @@ img {
   background-color: #ff6c00;
 }
 
-.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before, .why-we-subtitle::before, .works-subtitle::before {
+.header-lists-items:first-child::before, .hero-description-1::before, .about-us-description-1::before, .servises-description::before, .why-we-subtitle::before, .works-subtitle::before, .contacts-time::before {
   content: ' ';
   display: block;
   width: 60px;
@@ -467,7 +467,7 @@ img {
   margin-right: 20px;
 }
 
-.hero-description-1, .about-us-description-1, .servises-description, .why-we-subtitle, .works-subtitle {
+.hero-description-1, .about-us-description-1, .servises-description, .why-we-subtitle, .works-subtitle, .contacts-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +481,7 @@ img {
   text-transform: uppercase;
 }
 
-.servises-title, .why-we-title, .our-masters-title {
+.servises-title, .why-we-title, .our-masters-title, .contacts-title {
   font-family: Raleway;
   font-weight: bold;
   font-size: 42px;
@@ -1066,7 +1066,6 @@ img {
 }
 
 .servises {
-  border: 2px solid #3f0427;
   margin-left: auto;
   margin-right: auto;
   background-color: #111319;
@@ -1511,6 +1510,179 @@ img {
 @media screen and (max-width: 479px) {
   .foto-works {
     width: 100%;
+  }
+}
+
+.contacts {
+  background-color: #191c26;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1280px;
+  }
+}
+
+.contacts-title {
+  margin-top: 0px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contacts-address {
+  text-decoration: none;
+  font-style: normal;
+  color: #9da4bd;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts-address {
+    width: 270px;
+  }
+}
+
+.contacts-item a,
+.contacts-time-day {
+  font-size: 18px;
+  line-height: 1.66;
+  color: #9da4bd;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-time {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contacts-time::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-time {
+    margin-top: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-time {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-section-1 {
+    height: 521px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-section-1 {
+    width: 51.2%;
+  }
+}
+
+.contacts-section-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 480px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url("../images/contacts/contacts-mobile.png");
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts-section-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 768px;
+    background-image: url("../images/contacts/contacts-tablet.png");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-section-2 {
+    padding-left: 100px;
+    position: right;
+    width: 48.8%;
+    background-image: url("../images/contacts/contacts-desk.png");
+    max-width: 625px;
+  }
+}
+
+.contacts-item-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-item:first-child {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-address {
+    padding-right: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .address-item {
+    margin-left: 43px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contact-title-address {
+    padding-left: 39px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .time-day {
+    width: 330px;
+    padding-right: 39px;
+    padding-top: 89px;
   }
 }
 /*# sourceMappingURL=main.css.map */
