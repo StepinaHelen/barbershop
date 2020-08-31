@@ -1777,4 +1777,10 @@ img {
     padding-bottom: 56px;
   }
 }
+
+.contact-form-section {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 /*# sourceMappingURL=main.css.map */
