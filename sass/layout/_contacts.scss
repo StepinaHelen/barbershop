@@ -27,7 +27,7 @@
   text-decoration: none;
   font-style: normal;
   color: #9da4bd;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (width: 1279px) {
     width: 270px;
   }
 }
@@ -109,7 +109,10 @@
 }
 
 .address-item {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  // @media screen and (min-width: 768px) {
+  //   padding-left: 99px;
+  // }
+  @media screen and (min-width: 1280px) {
     margin-left: 43px;
   }
 }
@@ -123,7 +126,94 @@
 .time-day {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 330px;
-    padding-right: 39px;
+    // padding-right: 39px;
     padding-top: 89px;
+    padding-left: 80px;
   }
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  &:not(:placeholder-shown) {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+.contact-form-input {
+  height: 24px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 270px;
+  }
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}
+.contact-form-input:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+}
+.contact-form-textarea {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}
+
+.contact-form-section {
+  padding: 84px 31px;
+  @media screen and (min-width: 768px) {
+    padding: 100px 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 197px;
+    padding-top: 128px;
+    padding-right: 37px;
+    padding-left: 43px;
+  }
+}
+.contact-input-wrapper {
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-form-button {
+  margin-top: 44px;
+  color: #ffffff;
 }
